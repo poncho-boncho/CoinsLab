@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93ca8bba-15ef-41a5-8a1d-12ce6ed5f3f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CircularList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Node.kt" afterDir="false" />
+    <list default="true" id="93ca8bba-15ef-41a5-8a1d-12ce6ed5f3f7" name="Changes" comment="added a cyclic linked list">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Coins.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Information.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LinkedListIterator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CircularList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CircularList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Node.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +21,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -86,7 +95,22 @@
       <workItem from="1686417404036" duration="2070000" />
       <workItem from="1686477651502" duration="1158000" />
       <workItem from="1686491566520" duration="587000" />
+      <workItem from="1686496377647" duration="5332000" />
+      <workItem from="1686514392415" duration="10045000" />
+      <workItem from="1686560400422" duration="10051000" />
+      <workItem from="1686586292095" duration="4904000" />
+      <workItem from="1686670753940" duration="11540000" />
+      <workItem from="1686764282079" duration="758000" />
+      <workItem from="1686768968964" duration="697000" />
     </task>
+    <task id="LOCAL-00001" summary="added a cyclic linked list">
+      <created>1686496534497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686496534497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,5 +126,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added a cyclic linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a cyclic linked list" />
   </component>
 </project>

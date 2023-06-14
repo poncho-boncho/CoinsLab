@@ -1,9 +1,11 @@
-class CircularList {
-    private var head : Node? = null
-    private var tail : Node? = head
-    private var size = 0
+class CircularList<T> : Iterable<T> {
+    private var head : Node<T>? = null
+    private var tail : Node<T>? = null
+    var size = 0
+    private set
+    private var p =0
 
-    fun push (value: Int) {
+    fun push (value: T) {
         head = Node(value = value)
         head!!.next = head
         if (tail == null){
@@ -11,7 +13,11 @@ class CircularList {
         }
         size++
     }
-    fun append (value: Int){
+
+    override fun iterator(): Iterator<T> {
+        return LinkedListIterator(this)
+    }
+    fun append (value: T){
         if (isEmpty()){
             push(value)
             return
@@ -22,7 +28,7 @@ class CircularList {
         size++
     }
 
-    fun nodeAt (index: Int): Node?{
+    fun nodeAt (index: Int): Node<T>?{
         var currentNode = head
         var currentIndex = 0
         tail?.next = head
@@ -33,11 +39,41 @@ class CircularList {
         }
         return currentNode
     }
+    fun downTails(){
+       // var currentNode = head
+       // var i = 0
+      //  while (nodeAt(i)?.value!=1)
+       //     i++
+       // nodeAt(i)?.value = 0
+    }
 
-    fun swap(index: Int){
-        if(nodeAt(index)?.value==1)
-            nodeAt(index)?.value=0
-        else nodeAt(index)?.value=1
+    fun getCountCoin(coin : Int): Int{
+        var currentNode = head
+        var currentIndex = 0
+        var count = 0
+
+        while (currentIndex !=size){
+            if (currentNode?.value ==coin)
+                count++
+            currentIndex++
+            currentNode = currentNode!!.next
+        }
+        return count
+    }
+
+    fun qwerty(){
+        var currentNode = head
+        var currentIndex = 0
+
+        while (currentIndex !=size){
+            if (currentNode?.value==1)
+                p++
+            currentIndex++
+            currentNode = currentNode!!.next
+        }
+    }
+    fun getP(): Int {
+        return p
     }
 
     fun isEmpty(): Boolean {
